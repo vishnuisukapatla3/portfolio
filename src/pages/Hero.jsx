@@ -8,7 +8,7 @@ const Hero = () => {
       <div className="hero-banner-wrapper">
         <div className="hero-banner">
           <img 
-            src="/banner.png" 
+            src={`${import.meta.env.BASE_URL}banner.png`} 
             alt="Architectural Banner" 
             className="banner-image" 
           />
@@ -23,7 +23,7 @@ const Hero = () => {
         
         <div className="hero-profile-overlap">
           <div className="hero-profile-container">
-            <img src="/profile-photo.png" alt="Vishnu Vardhan" className="hero-profile-img" />
+            <img src={`${import.meta.env.BASE_URL}profile-photo.png`} alt="Vishnu Vardhan" className="hero-profile-img" />
           </div>
         </div>
       </div>
@@ -39,7 +39,7 @@ const Hero = () => {
           </p>
           
           <div className="hero-actions">
-            <a href="/Resume.pdf" className="btn-resume" download="Vishnu_Vardhan_Resume.pdf">
+            <a href={`${import.meta.env.BASE_URL}Resume.pdf`} className="btn-resume" download="Vishnu_Vardhan_Resume.pdf">
               Get Resume <FileArrowDown size={20} weight="bold" />
             </a>
             <Link to="/contact" className="btn-mail">

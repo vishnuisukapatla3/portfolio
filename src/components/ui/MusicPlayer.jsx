@@ -3,7 +3,7 @@ import './MusicPlayer.css';
 
 const MusicPlayer = ({ isPlaying }) => {
   const audioRef = useRef(null);
-  const songUrl = '/paro.mp3'; 
+  const songUrl = `${import.meta.env.BASE_URL}paro.mp3`; 
 
   useEffect(() => {
     if (audioRef.current) {

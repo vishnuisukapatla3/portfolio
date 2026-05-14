@@ -107,7 +107,7 @@ const Navbar = () => {
           <div className="desktop-links desktop-only">
             <Link to="/">Home</Link>
             <a href="https://linkedin.com/in/vishnuisukapatla3" target="_blank" rel="noopener noreferrer">LinkedIn ↗</a>
-            <a href="/Resume.pdf" target="_blank" rel="noopener noreferrer">Resume ↗</a>
+            <a href={`${import.meta.env.BASE_URL}Resume.pdf`} target="_blank" rel="noopener noreferrer">Resume ↗</a>
           </div>
         </div>
 
