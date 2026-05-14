@@ -40,9 +40,6 @@ const Footer = () => {
         )}
 
         <div className="footer-content">
-          <p className="copyright">&copy;{new Date().getFullYear()}</p>
-          <p className="tech-stack">Built with <strong>Vite</strong>, <strong>React</strong> and <strong>Vanilla CSS</strong></p>
-          <p className="coded-in">Coded in <strong>VS Code</strong> and deployed manually</p>
           <p className="developed-by">
             Developed by <strong>Isukapatla Vishnu Vardhan</strong> &middot; Source code available on <a href="https://github.com/vishnuisukapatla3" target="_blank" rel="noopener noreferrer">GitHub</a>
           </p>
