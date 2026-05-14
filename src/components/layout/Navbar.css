@@ -230,6 +230,20 @@
   color: var(--text-primary);
 }
 
+.mobile-social-links {
+  margin-top: 2rem;
+  padding-top: 2rem;
+  border-top: 1px solid var(--border-color);
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.mobile-social-links a {
+  font-size: 1.1rem;
+  color: var(--accent-primary);
+}
+
 @media (min-width: 1025px) {
   .mobile-only {
     display: none !important;

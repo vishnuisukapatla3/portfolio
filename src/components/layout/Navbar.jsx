@@ -1,6 +1,6 @@
 import { useState, useEffect } from 'react';
 import { Link, useLocation, useNavigate } from 'react-router-dom';
-import { List, MusicNote, Sun, Moon, GithubLogo, X, MagnifyingGlass, CaretRight, ProjectorScreen, IdentificationCard, Code, Briefcase, GraduationCap, ChatCircle, ArrowElbowDownLeft } from '@phosphor-icons/react';
+import { List, MusicNote, Sun, Moon, GithubLogo, LinkedinLogo, X, MagnifyingGlass, CaretRight, ProjectorScreen, IdentificationCard, Code, Briefcase, GraduationCap, ChatCircle, ArrowElbowDownLeft } from '@phosphor-icons/react';
 import { projectsData } from '../../data/projects';
 import MusicPlayer from '../ui/MusicPlayer';
 import './Navbar.css';
@@ -163,6 +163,9 @@ const Navbar = () => {
           <button className="icon-btn" onClick={toggleTheme} aria-label="Toggle Theme">
             {theme === 'dark' ? <Sun size={20} /> : <Moon size={20} />}
           </button>
+          <a href="https://linkedin.com/in/vishnuisukapatla3" target="_blank" rel="noopener noreferrer" className="icon-btn">
+            <LinkedinLogo size={20} />
+          </a>
           <a href="https://github.com/vishnuisukapatla3" target="_blank" rel="noopener noreferrer" className="icon-btn">
             <GithubLogo size={20} />
           </a>
@@ -177,6 +180,10 @@ const Navbar = () => {
             <Link to="/experience" onClick={() => setMobileMenuOpen(false)}>Experience</Link>
             <Link to="/education" onClick={() => setMobileMenuOpen(false)}>Education</Link>
             <Link to="/contact" onClick={() => setMobileMenuOpen(false)}>Contact</Link>
+            <div className="mobile-social-links">
+              <a href="https://linkedin.com/in/vishnuisukapatla3" target="_blank" rel="noopener noreferrer">LinkedIn ↗</a>
+              <a href={`${import.meta.env.BASE_URL}Resume.pdf`} target="_blank" rel="noopener noreferrer">Resume ↗</a>
+            </div>
           </div>
         )}
       </div>
