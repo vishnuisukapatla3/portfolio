@@ -6,7 +6,7 @@ const Sidebar = () => {
     <aside className="sidebar desktop-only">
       <div className="sidebar-content">
         <div className="sidebar-profile">
-          <img src="/profile-photo.png" alt="Vishnu Vardhan" className="sidebar-avatar" />
+          <img src={`${import.meta.env.BASE_URL}profile-photo.png`} alt="Vishnu Vardhan" className="sidebar-avatar" />
           <div className="sidebar-info">
             <h2 className="sidebar-name">Vishnu Vardhan</h2>
             <p className="sidebar-role">Java Developer</p>
